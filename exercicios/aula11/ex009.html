@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Descobrindo a Nacionalidade</h1>
+    <p>
+        <label for="txtnac">Digite o seu País de Origem:</label> <input type="text" name="txtnac" id="txtnac">
+        <input type="button" value="Enviar" onclick="verificar()">
+        <div id="res">
+
+        </div>
+    </p>
+
+    <script>
+        function verificar(){
+            var txtnac = document.getElementById('txtnac')
+            var res = document.getElementById('res')
+            var nac = txtnac.value
+            res.innerHTML = `<p>Você mora no(a) <strong>${nac}!</strong></p>`
+            if (nac == 'Brasil'){
+                res.innerHTML += '<p>Você é Brasileiro!</p>'
+            }else{
+                res.innerHTML += '<p>Você é Estrangeiro!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
