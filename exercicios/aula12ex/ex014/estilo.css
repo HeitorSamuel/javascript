@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    background-color: cornflowerblue;
+    font: normal 20px Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 600px;
+    padding: 15px;
+}
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+
+#imagem{
+    border-radius: 50%;
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
