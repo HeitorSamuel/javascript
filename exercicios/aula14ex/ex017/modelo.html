@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícico de horário</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <main>
         <section>
-            <div id="">Testando</div>
-            <div id="imagem">
-                <img src="" alt="">
+            <div>
+                <p><label for="txtnum">Número:</label>
+                <input type="number" name="txtnum" id="txtnum">
+                <input type="button" value="Gerar Tabuada" onclick="calcular()">
+                </p>
+            </div>
+            <div>
+            <select name="tab" id="tab" multiple style="height: 172px;">
+                <option value="msg">Digite um número acima</option>
+            </select>
             </div>
         </section>
     </main>
