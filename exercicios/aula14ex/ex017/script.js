@@ -11,8 +11,9 @@ function calcular(){
             var option = document.createElement('option')
             var mult = (num*cont)
             option.innerHTML = `${num} x ${cont} = ${mult}`
-            cont++
+            option.value = `tab${cont}`
             tab.appendChild(option)
+            cont++
             
         }
     
