@@ -10,9 +10,22 @@ function adicionar(){
             var tabadd = document.getElementById('tabadd')
             var option = document.createElement('option')
             option.setAttribute('value', 'valor')
-            option.innerHTML = `O valor ${num} adicionado.`
-            tabadd.appendChild(option)
+            if (valores.includes(num)){
+                window.alert('Valor inválido ou já encontrado na lista!')
+            }else{
+                valores.push(num)
+                option.innerHTML += `O Valor ${num} adicionado.`
+                tabadd.appendChild(option)
+                txtnum.value = ''
+            }
+            
 
         }
     }
+}
+var valores = []
+
+function finalizar(){
+    var res = document.getElementById('res')
+    res.innerHTML = `Ao todo, temos ${valores.length} números cadastrados`
 }
