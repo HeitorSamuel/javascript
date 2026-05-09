@@ -27,5 +27,8 @@ var valores = []
 
 function finalizar(){
     var res = document.getElementById('res')
-    res.innerHTML = `Ao todo, temos ${valores.length} números cadastrados`
+    res.innerHTML = `<p>Ao todo, temos ${valores.length} números cadastrados</p>`
+    res.innerHTML += `<p>O maior valor informado foi ${Math.max(...valores)}</p>` 
+    res.innerHTML += `<p>O menor valor informado foi ${Math.min(...valores)}</p>` 
+    res.innerHTML += `<p>Somando todos os valores, temos ${valores.reduce()}</p>`
 }
